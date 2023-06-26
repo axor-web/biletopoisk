@@ -6,6 +6,37 @@
   outline: none;
   text-decoration: none;
   list-style: none;
+
+  --orange: #FF5500;
+  --orangeDisabled: #FFA375;
+  --orangeHover: #E94E00;
+
+  --primary: #1B1F23;
+  --tertiary: #999FA6;
+
+  --borderDefault: #E1E3E6;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../public/SFProDisplay-Regular.woff2');
+}
+@font-face {
+  font-family: 'SF Pro';
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url('../../public/SFProDisplay-RegularItalic.woff2');
+}
+@font-face {
+  font-family: 'SF Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../public/SFProDisplay-Semibold.woff2');
 }
 
 img {
@@ -14,8 +45,30 @@ img {
   height: auto;
 }
 
+a {
+  color: inherit;
+}
+
 html,
 body {
   max-width: 100vw;
+  width: 100%;
+
   overflow-x: hidden;
+
+  min-height: 100vh;
+
+  background-color: #F5F5F5;
+}
+
+.main {
+  margin-top: 84px;
+
+  padding: 24px 32px;
+
+  position: relative;
+}
+
+.wrapper {
+  padding-left: 430px;
 }

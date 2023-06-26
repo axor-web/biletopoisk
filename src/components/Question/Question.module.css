@@ -1,0 +1,68 @@
+.container {
+  width: 100%;
+
+  padding: 24px;
+
+  background-color: white;
+
+  color: var(--primary);
+
+  border-radius: 8px;
+
+  position: relative;
+}
+
+.head {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-top: 0;
+
+  display: block;
+
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, margin-top .2s, visibility .2s;
+}
+.text_active {
+  margin-top: 16px;
+
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+
+  transition: height .2s, opacity .2s, margin-top .2s;
+}
+
+.arrow {
+  cursor: pointer;
+
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  top: 24px;
+  right: 24px;
+
+  transition: .2s;
+}
+.arrow_active {
+  transform: rotateX(180deg);
+}
+.arrow__svg {
+  width: 100%;
+  height: 100%;
+}

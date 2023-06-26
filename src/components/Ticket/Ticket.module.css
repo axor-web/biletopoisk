@@ -1,0 +1,49 @@
+.card {
+  width: 100%;
+  
+  padding: 24px;
+
+  background-color: white;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+
+  color: var(--primary);
+}
+.info {
+  font-family: 'SF Pro';
+}
+.header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+.genre {
+  display: inline-block;
+
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+
+  margin-top: 8px;
+}
+.image {
+  height: 120px;
+  width: 100px;
+}
+
+.controls {
+  flex: 1 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 24px;
+}

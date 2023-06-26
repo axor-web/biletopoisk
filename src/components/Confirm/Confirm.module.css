@@ -1,0 +1,36 @@
+.button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+
+  border: 1px solid var(--orange);
+  border-radius: 8px;
+
+  padding: 10px 16px;
+
+  background-color: var(--orange);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.button:hover {
+  border: 1px solid var(--orangeHover);
+}
+
+.button_yes {
+  color: white;
+}
+.button_yes:hover {
+  background-color: var(--orangeHover);
+}
+
+.button_no {
+  background-color: transparent;
+
+  color: var(--orange);
+}
+.button_no:hover {
+  color: var(--orangeHover);
+}

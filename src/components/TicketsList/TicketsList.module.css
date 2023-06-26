@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.notFound {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-top: 20vh;
+}

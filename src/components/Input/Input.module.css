@@ -1,0 +1,42 @@
+.label {
+  display: block;
+}
+.label__text {
+  font-family: 'SF Pro';
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--primary);
+}
+.input {
+  width: 100%;
+  max-width: 360px;
+
+  min-height: 40px;
+
+  padding: 10px 16px;
+
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: 'SF Pro';
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: white;
+
+  color: var(--primary);
+
+  border: 1px solid var(--borderDefault);
+  border-radius: 8px;
+
+  transition: border .2s;
+
+  cursor: text;
+}
+.input::placeholder {
+  color: var(--tertiary);
+}
+.input:focus {
+  border: 1px solid var(--orange);
+}

@@ -1,0 +1,30 @@
+.container {
+  border-radius: 8px;
+
+  background: white;
+
+  padding: 24px;
+
+  height: calc(100vh - 218px);
+
+  position: fixed;
+
+  top: 108px;
+  left: 32px;
+
+  width: 408px;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 16px;
+}
+.header {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+
+  display: block;
+
+  margin-bottom: 20px;
+}

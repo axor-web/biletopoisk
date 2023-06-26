@@ -1,0 +1,34 @@
+@keyframes loading {
+  from {
+    transform: translateX(-165%);
+    left: 0;
+  }
+  to {
+    transform: translateX(100%);
+    left: 100%;
+  }
+}
+.loading {
+  overflow: hidden;
+
+  position: relative;
+}
+.loading::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 20%;
+
+  background-color: rgba(0, 0, 0, .5);
+
+  border-radius: 8px;
+  
+  filter: blur(100px);
+
+  animation: loading 2s linear infinite;
+}

@@ -1,0 +1,25 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  cursor: pointer;
+
+  background-color: var(--orange);
+
+  border: none;
+
+  padding: 4px;
+
+  border-radius: 4px;
+
+  transition: background-color .2s;
+}
+.button:hover {
+  background-color: var(--orangeHover);
+}
+.button[disabled] {
+  background-color: var(--orangeDisabled);
+
+  cursor: not-allowed;
+}

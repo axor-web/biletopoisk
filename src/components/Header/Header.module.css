@@ -1,0 +1,39 @@
+.header {
+  background-color: #333333;
+  padding: 24px 32px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  z-index: 100;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.cart__count {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+
+  border-radius: 8px;
+
+  background-color: var(--orange);
+}

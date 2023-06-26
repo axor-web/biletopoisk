@@ -1,0 +1,17 @@
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  background-color: #E0E0E0;
+}
+.image__inner {
+  min-width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+}

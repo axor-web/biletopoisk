@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.notFound {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-top: 20vh;
+}
+
+.totalAmount {
+  background-color: white;
+
+  padding: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+
+  margin-top: 16px;
+
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 218px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}

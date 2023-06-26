@@ -1,0 +1,20 @@
+.container {
+  color: var(--primary);
+  
+  padding: 24px;
+
+  background-color: white;
+
+  border-radius: 8px;
+}
+.header {
+  font-size: 32px;
+  line-height: 32px;
+}
+.p {
+  display: inline-block;
+  margin-top: 16px;
+
+  font-size: 16px;
+  line-height: 24px;
+}

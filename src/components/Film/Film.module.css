@@ -1,0 +1,68 @@
+.film {
+  width: 100%;
+
+  padding: 24px;
+
+  background-color: white;
+
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 32px;
+
+  border-radius: 8px;
+
+  color: var(--text-primary, #1B1F23);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+.image {
+  flex: 0 0 400px;
+
+  width: 400px;
+  height: 500px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+.specs > span {
+  font-size: 20px;
+  line-height: 24px;
+
+  display: block;
+}
+.spec {
+  font-weight: 700;
+  display: inline;
+}
+
+.description__head {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+
+  display: block;
+
+  margin-bottom: 16px;
+}
+.description__text {
+  font-size: 16px;
+}
