@@ -67,6 +67,8 @@ body {
   padding: 24px 32px;
 
   position: relative;
+
+  min-height: calc(100vh - 170px);
 }
 
 .wrapper {

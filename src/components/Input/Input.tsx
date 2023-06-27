@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import styles from './Input.module.css';
+import debounceSet from "@/helpers/debounceSet";
 
 interface Props {
   type?: string,
@@ -15,7 +16,7 @@ export const Input: FunctionComponent<Props> = ({ type = 'text', placeholder = '
       type={type}
       placeholder={placeholder}
       className={styles.input}
-      onChange={(event) => {setName && setName(event.target.value); }}
+      onChange={(event) => {setName && debounceSet(setName, event.target.value) }}
     />;
 
   return (
