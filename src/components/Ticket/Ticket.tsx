@@ -3,8 +3,7 @@
 import { FunctionComponent, MouseEventHandler, ReactNode, useEffect, useState } from "react";
 import { Counter } from "../Counter/Counter";
 import { CloseButton } from "../CloseButton/CloseButton";
-import { useDispatch, useSelector } from "react-redux";
-import { selectProductAmount } from "@/redux/features/cart/selector";
+import { useDispatch } from "react-redux";
 import { cartActions } from "@/redux/features/cart";
 import { NoImageSvg } from "../NoImageSvg/NoImageSvg";
 import getGenreOnRus, { Genre } from "@/helpers/getGenreOnRus";
@@ -35,7 +34,6 @@ export const Ticket: FunctionComponent<Props> = ({
 }) => {
   const [isDeleted, setIsDeleted] = useState(false);
 
-  const amount = useSelector((state) => selectProductAmount(state, filmId));
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -73,7 +71,7 @@ export const Ticket: FunctionComponent<Props> = ({
         </span>
       
         <div className={styles.controls}>
-          <Counter minValue={isInBasket ? 1 : 0} id={filmId} amount={amount} />
+          <Counter id={filmId} />
 
           { isInBasket && <CloseButton size={20} onClickHandler={onClickHandler}/> }
         </div>
